@@ -1,0 +1,101 @@
+main {
+    background-color: white;
+
+}
+
+.listado_productos_title{
+    background-image: url('/images/fondo-cactus.png');
+    font-size: 18px;
+    color: rgb(114, 141, 117);
+    font-family: nexa-light;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 2px ridge white;
+}
+.listado_productos {
+    background-color: white;
+    font-size: 18px;
+    color: rgb(114, 141, 117);
+    font-family: nexa-light;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.hay-tabla{
+    margin: auto;
+    padding: 60px;
+}
+
+.table-products {
+    background-color: white;
+    font-size: 16px;
+    color: rgb(114, 141, 117);
+    font-family: nexa-light;
+    padding: 5px;
+}
+
+
+
+.boton-listado{
+    color:rgb(240, 100, 149);
+    font-size: 16px;
+    border: none;
+    background-color: white; 
+    margin: 3px
+    
+   }
+
+   .boton-listado :hover{
+    color:rgb(240, 100, 149);
+    background-color: rgb(231, 230, 230);
+    border-radius: 3px;
+
+   }
+
+   .boton-listado-borrar{
+    color:rgb(240, 100, 149);
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    margin: auto;
+        
+   }
+
+   .boton-listado-borrar :hover{
+    
+    background-color: rgb(255, 164, 164);
+    color:rgb(104, 104, 104);
+    border-radius: 3px;
+   
+    
+   }
+
+   .boton-listado-crear{
+    color:rgb(126, 126, 126);
+    font-size: 16px;
+    border: none;
+    background-color: white; 
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 3px;
+    
+   }
+
+   .boton-listado-crear :hover{
+    color:rgb(240, 100, 149);
+    font-size: 16px;
+    background-color:rgb(104, 104, 104);
+   }
+
+
+   .add-to-cart{
+    background-color: rgb(250,212,184);
+    width: 200px; 
+    border-radius: 20px;
+    margin: auto;
+    border: none;
+
+    font-size:16px;
+    color: rgb(114,141,117);
+    font-family: nexa-light;
+    padding: 5px;
+}

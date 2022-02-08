@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+
+<body>
+
+    <%- include('../partials/header') %>
+
+    <main style="background-image: url('/images/fondo-cactus.png')">
+
+        <p class="listado_productos_title">Listado de usuarios</p>
+        <table class="hay-tabla">
+            <thead>
+                <td class="listado_productos">ID</td>
+                <td class="listado_productos">Nombre</td>
+                <td class="listado_productos">Apellido</td>
+                <td class="listado_productos">Email</td>
+                <td class="listado_productos">Categoría</td>
+                
+            </thead>
+            <tbody>
+                <% user.forEach(user => { %>
+                <tr>
+                    <td class="table-products"><%= user.id %></td>
+                    <td class="table-products"><%= user.first_name %></td>
+                    <td class="table-products"><%= user.last_name %></td>
+                    <td class="table-products"><%= user.email %></td>
+                    <td class="table-products"><%= user.userCategory.category %></td>
+                    <td class="boton-listado">
+                        <a href="/listados/listadousuarios/<%= user.id %>" class="boton-listado">Detalle</a>
+                    </td>
+                    <td class="boton-listado">
+                        <a href="/usuarios/editarusuario/<%= user.id %>" class="boton-listado">Editar</a>
+                    </td>
+                    <td>
+                        <form action="/listados/listadousuarios/delete/<%= user.id %>?_method=DELETE" method="post" class="boton-listado-borrar formDeleteUserJS">
+                            <button class="boton-listado-borrar" type="submit">Borrar</button>
+                        </form>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+
+        </table>
+    </body>  <script src="/js/products.js"></script>
+    </main>
+
+
+    <%- include('../partials/footer') %>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %> 
+
+<body class="fondo-home">
+    <%- include('../partials/header') %> 
+
+    <main class="login">
+        <h2 class="title-login" style="font-family:nexa-light">Formulario de edición de productos</h2>
+        <br>
+        <section class="cuadro" style="width: 70%">
+            <div  class="detail-group">
+                      <div style="margin: auto;">     
+                <img src="/images/products/<%= productEdit.image %>"    alt = <%= productEdit.name %> class= "imagen-detalle">
+            </div> 
+            <div style="margin: auto;">
+            <div class="formulario">
+                <form action="/productos/editarproducto/<%= productEdit.id %>?_method=PUT" method="POST" enctype= "multipart/form-data" class='createEditForm'>
+                <p class="campo">
+                <label for="productName"class="label">Modifique nombre de producto</label>
+                <input style= "outline:none" type="text" name="name" id="productName" class="input" style="font-style:italic; font-size: 12px" value="<%= locals.oldProductEdit ? oldProductEdit.name : productEdit.name %>">
+                </p>
+                <span style="color: red; font-size: 10px; font-style:italic">
+                    <% if (locals.errors && errors.name) { %>  
+                        <%= errors.name.msg %> 
+                    <% } %>
+                </span>
+                <br>
+                <p class="campo" >
+                    <label for="productDescription"class="label">Modifique descripción</label>
+                    <input style= "outline:none" type="text" name="description" id="productDescription" class="input" style="font-style:italic; font-size: 12px"   value="<%= locals.oldProductEdit ? oldProductEdit.description : productEdit.description %>"   >
+                    </p>
+                    <span style="color: red; font-size: 10px; font-style:italic">
+                        <% if (locals.errors && errors.description) { %>  
+                            <%= errors.description.msg %> 
+                        <% } %>
+                    </span>
+                    <br>
+                    <p class="campo">
+                    <label for="productImage" class="label">Modifique imagen</label>
+                    <input style= "outline:none" type="file" name="image" id="productImage" class="input" style="font-style:italic; font-size: 12px" value="<%= locals.oldProductEdit ? oldProductEdit.image : productEdit.image %>"> 
+                    </p>
+                    <span style="color: red; font-size: 10px; font-style:italic">
+                        <% if (locals.errors && errors.image) { %>  
+                            <%= errors.image.msg %> 
+                        <% } %>
+                    </span>
+                    <br>
+                    
+                    <label for="productImage" class="label">Modifique categoría</label>
+                    <select name="category" class="category-select">
+                        <option disabled selected>Seleccioná una opción</option>
+                        <% for( let i = 0; i < category.length; i++ ) { %>
+    
+                            <option value="<%= category[i].id%>" class="input">
+                                
+                                <%= category[i].category%>
+    
+                            </option>
+                             
+                        <% } %>
+                       
+                        
+                    </select>
+                    <br>
+                    <span style="color: red; font-size: 10px; font-style:italic">
+                        <% if (locals.errors && errors.category) { %>  
+                            <%= errors.category.msg %> 
+                        <% } %>
+                    </span>
+
+                    <br>
+                    <br>
+                    <p class="campo">
+                        <label for="productPrice" class="label">Modifique precio ARS $</label>
+                        <input style= "outline:none" type="number" name="price" id="productPrice" class="input" style="font-style:italic; font-size: 12px" value="<%= locals.oldProductEdit ? oldProductEdit.price : productEdit.price %>">
+                        </p>
+                        <span style="color: red; font-size: 10px; font-style:italic">
+                            <% if (locals.errors && errors.price) { %>  
+                                <%= errors.price.msg %> 
+                            <% } %>
+                        </span>
+                    <br>
+                    <p class="campo">
+                        <label for="productStock" class="label">Modifique Stock</label>
+                        <input style= "outline:none" type="number" name="stock" id="productStock" class="input" step="0.01" style="font-style:italic; font-size: 12px" value="<%= locals.oldProductEdit ? oldProductEdit.stock : productEdit.stock %>">
+                        </p>
+                        <span style="color: red; font-size: 10px; font-style:italic">
+                            <% if (locals.errors && errors.stock) { %>  
+                                <%= errors.stock.msg %> 
+                            <% } %>
+                        </span>
+                    <p>
+                    <br>
+                <button type="submit" class="button" style="width: fit-content;" ><span>MODIFICAR</span>
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </button>
+                </p>
+                <a href="/crearproducto"><p class="observation">Borrar formulario</p></a>
+            </form>
+            </div>
+        </section>
+        <script src="/js/products.js"></script>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html>

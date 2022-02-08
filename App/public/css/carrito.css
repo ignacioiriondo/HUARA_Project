@@ -1,0 +1,231 @@
+
+.head-carrito{
+    position:relative;
+    text-align: center;
+    z-index: 0;
+}
+
+.head-carrito-image{
+    width: 100%;
+    opacity: 0.8;
+}
+
+.titulo-carrito{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    letter-spacing: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:40px;
+    color: white;
+    padding: 20px;
+    z-index: 2;
+}
+.todos-productos-carrito{
+    background-image: url('/images/fondo-cactus.png');
+}
+
+section{
+    width:100%;
+    margin:auto;
+}
+
+.section-product-carrito{
+    width: 80%;
+    padding: 10px;
+    background-image: url('/images/fondo-cactus.png');
+}
+
+.product-carrito{
+    
+    background-color: white;
+    border: solid 2px #2222;
+    padding-top: 20px;
+    text-align: center;
+    width: fit-content;
+    margin:auto;
+    margin-bottom: 20px;
+}
+div.borde-blanco{
+    background-image: url('/images/fondo-cactus.png');
+}
+.product-img-carrito{
+    width:200px;
+    height:200px;
+    margin:auto;
+
+    
+}
+
+.descripcion-carrito{
+    font-size:16px;
+    color: rgb(114,141,117);
+    font-family: nexa-light;
+    padding: 5px;
+}
+
+.product-box-carrito{
+    padding: 5px;
+    background-color: white;
+
+}
+
+
+.iniciar-compra{
+    font-size:16px;
+    color: rgb(114,141,117);
+    font-family: nexa-light;
+    padding: 5px;
+   
+
+}
+
+.fa-trash{
+    display: block;
+    padding-top: 5px;
+    font-size: 18px;
+    width: 10%;
+    text-align: center;
+    color: rgb(114,141,117);
+    font-size: 20px;
+    
+}
+
+div.cantidad-producto{
+    display: flex;
+    align-items: center;
+    width: 110px;
+    margin: auto;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+div.cantidad-producto i{
+    display: block;
+    margin: 2px;
+    width: 28%;
+    text-align: center;
+    color: rgb(114,141,117);
+    font-size: 14px;
+    padding: 5px;
+    opacity: 0.2;
+}
+
+
+h4.cantidad{
+    font-size:14px;
+    color: rgb(114,141,117);
+    font-family: nexa-light;
+    padding: 5px;
+    width: 28%;
+}
+
+
+div.pagar{
+    margin: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: url('/images/fondo-cactus.png');
+
+}
+
+div.boton-compra-compra{
+    text-align: center;
+    background-color: rgb(250,212,184);
+    width: 200px; 
+    border-radius: 20px;
+    margin: auto;
+    margin-top:15px;
+    margin-bottom:15px;
+
+}
+
+
+.boton-compra{
+    background-color: rgb(250,212,184);
+    width: 200px; 
+    border-radius: 20px;
+    margin: auto
+}
+
+.detail-comprar{
+    color:rgb(240, 100, 149);
+    font-size: 8px;
+    border: none;
+    background-color: white;
+    border-left: solid 2px rgb(240, 100, 149);
+    padding-left: 5px;
+    
+   }
+
+
+.detail-comprar-producto{
+    
+    font-size: 8px;
+    border: none;
+    background-color: rgb(250,212,184);
+    padding-left: 5px;
+    
+   }
+
+   .detail-eliminar-producto{
+    
+    font-size: 8px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    
+    
+   }
+
+   input.cantidad-producto{
+    background-color:  #ebebeb;
+    border: none;
+    padding: 2px;
+    max-width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(114,141,117);
+    font-family: nexa-bold;
+
+
+
+   }
+
+
+
+@media(min-width: 768px){
+    .product-carrito{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+    }
+    div.product-box-carrito{
+
+        align-items: center;
+        width: 500px;
+    }
+
+
+  }
+
+@media(min-width: 1200px){
+      .titulo-carrito{
+        font-size:50px;
+    }
+}
+
+
+
+
+
+
+
+
+

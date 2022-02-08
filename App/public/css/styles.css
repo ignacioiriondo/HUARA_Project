@@ -1,0 +1,53 @@
+@import url(/css/home.css);
+@import url(/css/header.css);
+@import url(/css/footer.css);
+@import url(/css/product.css);
+@import url(/css/productDetail.css);
+@import url(/css/login.css);
+@import url(/css/carrito.css);
+@import url(/css/register.css);
+@import url(/css/profile.css);
+@import url(/css/productList.css);
+
+
+@font-face {
+    font-family: nexa-bold;
+    src: url('/design/NexaBold.otf') format('opentype');
+} 
+@font-face {
+    font-family: nexa-light;
+    src: url('/design/NexaLight.otf') format('opentype');
+} 
+
+* {
+    font-family: nexa-bold;
+    box-sizing: border-box;
+}
+
+
+.instagram {
+    width: 100%;
+    opacity: 0.4;
+    
+}
+
+.yellow{
+    color: rgb(225, 168, 89) ;
+}
+
+.brown{
+    color: rgb(167, 100, 66) ;
+}
+
+.pink{
+    color: rgb(255, 196, 217) ;
+}
+
+.beige-fondo{
+    color: rgb(250,212,184);
+}
+
+.green{
+    color: rgb(114,141,117)
+}
+

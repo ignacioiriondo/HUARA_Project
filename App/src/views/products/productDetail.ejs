@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head') %> 
+    
+<body>
+
+    <%- include('../partials/header') %> 
+
+    <main class="cuerpo-detalle">
+        <section>  
+                <article>
+                    <div class="detail-group">
+                            
+                        <img src="/images/products/<%= products.image %>"    alt = <%= products.name %> class= "imagen-detalle">
+
+                    <div class="detail-otro">
+                        
+                        
+                        <% if ( locals.userLogged && locals.userLogged.user_category_id != 2) {%> 
+                        <div class="detail-edit">
+                            <a class="detail-editar" href="/productos/editarproducto/<%= products.id  %>">EDITAR PRODUCTO</a>
+                                <form class="formDeleteJS" action="/productos/<%= products.id  %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                <button class="detail-eliminar " type="submit">ELIMINAR</button>
+                                </form>
+                            </div>
+                        <% } %> 
+                        <p class="detail-product-name"><%= products.name%></p>
+                      
+                        <p class="detail-description"><%= products.description %></p>
+                        <div class="detail-numbers">
+                        <p class="detail-presentacion">100 gramos</p>
+                        <p class="detail-price">$<%= products.price %></p>
+                        </div>
+
+                    
+
+                        <% if (locals.isLogged)  { %>
+                            <form action="/carrito" method="post">
+                                <input name="productCart" type="hidden" value="<%= products.id %>">
+                                <button type="submit" class="add-to-cart detalle-bolsa">
+                                    <i class="fas fa-shopping-bag bolsita"></i>
+                                </button>
+                            </form> 
+                        <% } %> 
+
+                        <br>
+                        
+                    </div>
+
+                     </div>
+                                
+                            
+                    
+                </article>
+                
+        </section>
+        
+    </main>
+    <script src="/js/products.js"></script>
+    <%- include('../partials/footer') %>
+
+</body>
+
+</html>
+        

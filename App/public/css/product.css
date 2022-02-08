@@ -1,0 +1,198 @@
+body.fondo-products{
+    background-image: url('/images/fondo-cactus.png');
+}
+
+.category-select{
+    color: rgb(114,141,117);
+    font-size: 12px;
+    padding: 3px;
+    font-family: nexa-light;
+    
+}
+
+div.buscar-titulo{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#titulo{
+    width: 300px;
+    padding: 5px;
+}
+
+button.boton-buscar{
+    padding: 8px;
+    font-family: nexa-light;
+    background-color: rgb(250,212,184);
+    border: none;
+    color: #666;
+    width: 70px;
+}
+
+button.boton-buscar:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+input.buscar-product{
+    border: solid rgb(250,212,184) 0.5px;
+    background-color: white;
+    width: 100px;
+    outline: none;
+}
+
+
+
+.descripcion, .precio {
+    font-size:16px;
+    color: rgb(114,141,117);
+    font-family: nexa-light;
+}
+
+.detalle{
+    font-size:12px;
+    color: rgb(114,141,117);
+    font-family: nexa-light;
+   }
+
+.product-img{
+    width:200px;
+    height:200px;
+    margin:auto;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+
+.product-box{
+    margin-bottom: 10px;
+    background-color: white;
+    border-top: solid 2px #2222;
+    padding-top: 20px;
+    text-align: center; 
+  
+}
+
+section{
+    width:90%;
+    margin:auto;
+
+}
+
+section.productos-fondito{
+    background-image: url('/images/fondo-cactus.png');
+}
+
+.head-product-image{
+    width: 100%;
+    opacity: 0.8;
+position: relative;
+   z-index: 1;
+}
+
+.intro{
+    display: none;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    color: #666;
+    font-family: nexa-light;
+    background-image: url('/images/fondo-cactus.png');
+}
+
+.head-products{
+    position:relative;
+
+    z-index: 0;
+}
+
+div.titulo{
+    position:absolute;
+    letter-spacing: 10px;
+    font-size:30px;
+    color: white;
+    z-index: 2;
+    top: 40%;
+    left: 30%;
+  
+    
+
+}
+
+article.product{
+    background-image: url('/images/fondo-cactus.png');
+}
+.box-description{
+    margin-top: 20px;
+}
+
+div.product-box{
+    background-image: url('/images/fondo-cactus.png');
+}
+
+@media(min-width: 768px){
+
+    article.product{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .product-box{
+        width: 45%;
+    }
+    div.titulo{
+        font-size:40px;
+        
+        top: 40%;
+        left: 35%;
+     
+
+    }
+
+    div .box-description{
+       
+        box-sizing:border-box;
+        padding: 5px;
+       
+        
+    }
+    .intro{
+        display: flex;
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
+        color: #666;
+        font-family: nexa-light;
+      
+    }
+
+   
+
+
+
+}
+
+@media(min-width: 1200px){
+    .logo{
+        width: 200px;
+    }
+    div.titulo{
+        font-size:50px;
+        
+        top: 40%;
+        left: 40%;
+     
+
+    }
+    article.product{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .product-box{
+        width: 22%;
+    }
+    
+
+}

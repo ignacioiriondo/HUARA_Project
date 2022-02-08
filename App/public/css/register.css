@@ -1,0 +1,134 @@
+.login{
+   color:rgb(114,141,117);
+  text-align: center;
+  width:100%;
+  background-color: white  
+}
+
+.title-login{
+   padding-top: 30px;
+   color: rgb(114,141,117);
+   font-size: 30px;
+}
+
+.title-login-2{
+   font-size: 15px;
+   font-style: oblique;
+   padding: 15px;
+   font-family: nexa-light;
+}
+
+.observation{
+   color: rgb(114,141,117);
+   font-size:12px;
+   margin-bottom:20px;
+   font-family: nexa-light;
+   margin-top: 5px;
+  }
+
+ 
+.formulario{
+      width: 100%;
+   
+}
+.pos-rel{
+   position: relative;
+}
+.ojo-abierto{
+   position: absolute;
+   top: 35px;
+   left: 270px;
+}
+
+
+.button{
+   margin: auto;
+   display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 35px;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+   color: rgb(114,141,117);
+   margin-bottom: 10px;
+   opacity: 0.5;
+   box-shadow: 0px 0px 10px;
+}
+.button span {
+	position: relative;
+	z-index: 0;
+	transition: .3s ease all;
+    color: black;
+    border-radius: 12px;
+    padding: 5px;
+    width: 200px;
+    font-family: nexa-light;
+    font-weight: bolder;
+    margin:5px;
+    
+}
+
+
+
+.button svg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+   }
+
+.button rect {
+	width: 100%;
+	height: 100%;
+	stroke: rgb(114,141,117);
+	stroke-width: 5px;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	transition: 2s ease all;
+}
+
+.button:hover rect {
+	stroke-dashoffset: 0;
+}
+
+  button .button .button2{
+      margin-top:0;
+      margin-bottom: 5px;
+  }
+
+  .input{
+      display:block;
+      margin:auto;
+      padding:5px 5px;
+      color: black;
+      font-family: nexa-light;
+       width: 300px;
+       border: none;
+       box-shadow: 0px 0px 10px rgb(100,100,100);
+       margin-top: 10px;
+       font-size: 15px;
+
+  }
+
+  .label{
+      font-size: 15px;
+   
+  }
+
+  .cuadro{
+   border:dotted rgb(114,141,117) 2px;
+   width:fit-content;
+   padding: 10px 15px 10px 15px;
+   box-sizing: border-box;
+   border-radius: 20px;
+   margin-bottom: 15px;
+}

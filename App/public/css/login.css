@@ -1,0 +1,93 @@
+body.fondo-login{
+    background-image: url('/images/fondo-cactus.png');
+}
+
+.login{
+    color: rgb(114,141,117);
+   text-align: center;
+   width:100%;
+   font-family: nexa-light;
+   background-image: url('/images/fondo-cactus.png');
+   margin:0;
+}
+
+.title-login{
+    padding-top: 30px;
+    font-size: 30px;
+    color: rgb(114,141,117);
+    font-family:nexa-light;
+}
+
+.title-login-2{
+    font-size: 15px;
+    font-style: oblique;
+    padding: 15px;
+}
+
+.observation{
+   
+    color: rgb(114,141,117);
+    font-size:12px;
+    margin-bottom:20px;
+    font-family: nexa-light;
+    margin-top: 5px;
+}
+
+.formulario{
+       width: 100%
+}
+
+.button{
+
+    color: rgb(114,141,117);
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    border: solid 0.5px rgb(114,141,117);
+    font-family: nexa-light;
+    margin:5px;
+}
+
+
+
+   .button2{
+       margin-top:0;
+   }
+
+   .input{
+       display:block;
+       margin:auto;
+       padding:2px 5px;
+       color: black;
+       font-weight: bolder;
+       font-family: nexa-light;
+        width: 300px;
+        margin-top: 10px;
+        background-color: transparent;
+        font-size: 15px;
+
+   }
+
+   .label{
+       font-size: 20px;
+   }
+
+   
+   .cuadro1{
+       margin-top: 10px;
+       border:dotted rgb(114,141,117) 2px;
+       width:fit-content;
+       padding: 0px 15px;
+       box-sizing: border-box;
+       margin-bottom: 5px;
+       border-radius: 20px;
+   }
+
+   .cuadro2{
+    border:dotted rgb(114,141,117) 2px;
+    width:fit-content;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,402 @@
+body.fondo-home{
+    background-image: url('/images/fondo-cactus.png');
+}
+
+.banner-home-1 {
+    display: block;
+    width: 100%;
+}
+
+.banner-home-2 {
+    width: 100%;
+}
+
+.slider{
+    width:40%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding:0;
+    width: 400%;
+
+    animation: cambio 15s infinite alternate linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.img-slider{
+    object-fit:cover;
+    max-height: 400px;
+}
+.carrusel{
+    margin: 40px;
+    width: 95%;
+}
+.carousel__contenedor {
+	position: relative;
+}
+
+.product-img.carrusel-img{
+
+    box-shadow: none;
+    border: solid white 5px;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+    align-items: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background-color:rgb(114,141,117);
+	opacity: .2;
+	border-radius: 0;
+}
+
+button.carousel__siguiente,
+button.carousel__anterior{
+    
+    font-size: 30px;
+
+}
+
+
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+
+.banner-home-3 {
+    width: 100%;
+}
+.banner-izquierda-1{
+    position: relative;
+    z-index: -1;
+    
+}
+.banner-izquierda-1 div img{
+    width: 100%;
+}
+
+.banner-home-2 div img{
+    width: 100%;
+}
+
+.banner-home-3 div img{
+    width: 100%;
+}
+
+.banner-izquierda-1 img {
+    width: 100%;
+    margin-top: -1px;
+}
+
+.banner-derecha-1{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-derecha-1 h3{
+    display: flex;
+    font-family: nexa-light;
+    font-size: 18px;
+    color: #666;
+}
+.banner-derecha-1 img{
+    width: 60%;
+}
+
+.banner-home-2 div{
+    width: 100%;
+}
+
+.banner-home-2{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.carru-titulo p{
+   
+    
+    text-align: center;
+    font-family: nexa-light;
+    font-size: 40px;
+    color:rgb(114,141,117);
+    font-style: bold;
+    letter-spacing: .2REM
+    
+
+}
+
+.carru-titulo{
+    opacity: 0.8;
+   
+}
+
+.list-banner-3 li{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: nexa-light;
+    color: rgb(114,141,117);
+    letter-spacing: .2REM;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5PX;
+}
+
+.list-banner-2{
+    position: absolute;
+    transform: translate(-50%, -90%);
+  
+  
+   
+}
+
+
+
+.carru-titulo{
+    color: rgb(77, 77, 77);
+    font-family: nexa-light;
+}
+
+.list-banner-2 li{
+    font-size: 30px;
+    font-family: nexa-light;
+    color: rgb(114,141,117);
+    letter-spacing: .2REM;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5PX;
+
+}
+
+.list-banner:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.expand{
+    width: 100%;
+}
+
+.newsletter{
+   
+    background-color:transparent;
+    margin: auto;
+    width: 100%;
+}
+.newsletter h3{
+    font-family: nexa-light;
+    font-size: 18px;
+    color: #666;
+}
+.email-newsletter{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.email-newsletter  label{
+    width: 100%;
+}
+/*.text-banner-1{
+    position: absolute;
+    font-size: 100px;
+    top: 30px;
+    color: white;
+    text-align: left;
+}*/
+
+
+
+@media (min-width: 360px) {
+    .list-banner{
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        padding: 5px;
+    }
+    .list-banner-2{
+        top: 70%;
+        left: 50%;
+        font-size: 32px;
+        color: rgb(77, 77, 77);
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner-home-1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+    .banner-izquierda-1 img{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .banner-home-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .newsletter{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 39%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .img-newsletter{
+        width: 55%;
+        size: 0.5;
+    }
+    
+    .banner-derecha-1{
+        display: flex;
+        justify-content: space-around;
+        width: 55%;
+    }
+
+    .banner-derecha-1 img{
+        width: 60%;
+    }
+
+    .banner-derecha-1 h3{
+        max-height:600px ;
+    }
+    
+    .banner-izquierda{
+        width: 100%;
+    }
+    .banner-home div{
+        justify-content: center;
+        display: flex;
+    }
+
+    .list-banner{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        padding: 15px;
+    }
+    
+    .list-banner-2{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font-size: 50px;
+        padding: 15px;
+    }
+    /*img.expand {
+        position: relative;
+        }*/
+    }      
+/* fondo crema: rgb(250,212,184)
+/* fondo rosa: rgb(255,196,217)
+/* fondo logo: rgb(240,220,190)
+
+
+/* gris: rgb(67,69,75)
+/* naranja: rgb(255,168,89)
+/* marron: rgb(167,100,66)
+/* oliva: rgb(198,174,119)
+/* verde: rgb(114,141,117)
+

@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.no-desplegado{
+    display: none;
+    background-color: white;
+   text-align: center;
+   line-height: 50px;
+   padding-bottom: 10px;
+   position: absolute;
+   width: 100%;
+   z-index: 2;
+   margin: auto;
+   opacity: 0.7;
+}
+
+li.desplegable-item{
+    border-bottom: dotted 0.5px rgb(114, 141, 117);
+    box-sizing: content-box;
+    
+}
+
+li.desplegable-item:hover{
+    background-color: rgb(250, 212, 184);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(114, 141, 117);
+    font-family: nexa-light;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+i {
+    color: rgb(114, 141, 117);
+}
+
+li {
+    color: rgb(114, 141, 117);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.box-header {
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(250, 212, 184);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-header {
+    display: flex;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.logo-header-img {
+    display: flex;
+    width: 70%;
+}
+
+.hamburger-header {
+    font-size: 30px;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.nav-bar-header {
+    display: none;
+}
+
+.perfil-desplegable{
+    background-color: white;
+    display: none;
+    position:absolute;
+    list-style-type: none;
+    text-align: center;
+    left: 80%;
+    width:20%;
+    line-height: 30px;
+    padding-bottom: 10px;
+    top: 100%;
+    z-index: 3;
+    opacity: 0.9;
+}
+
+div.perfil-desplegable li{
+    border-bottom: dotted 0.5px rgb(114, 141, 117);
+    box-sizing: content-box;
+    padding: 8px;
+    
+}
+
+div.perfil-desplegable li:hover{
+    background-color: rgb(250, 212, 184);
+    
+}
+
+li#desplegable{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil-desplegable-listado{
+    background-color: white;
+    display: none;
+    position:absolute;
+    list-style-type: none;
+    text-align: center;
+    left: 52%;
+    width:23%;
+    line-height: 30px;
+    padding-bottom: 5px;
+    top: 100%;
+    z-index: 10;
+    opacity: 0.7;
+}
+
+div.perfil-desplegable-listado li{
+    border-bottom: dotted 0.5px rgb(114, 141, 117);
+    box-sizing: content-box;
+    padding: 8px;
+}
+
+div.perfil-desplegable-listado li:hover{
+    background-color: rgb(250, 212, 184);
+}
+
+
+
+
+@media (min-width: 360px) {
+
+    .box-header{
+        display: flex;
+        background-color: rgb(250, 212, 184)
+    }
+
+   
+
+    .logo-header {
+        display: flex;
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .logo-header-img {
+        display: flex;
+        width: 70%;
+    }
+
+    .hamburger-header {
+        font-size: 30px;
+        border-radius: 8px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+
+    .nav-bar-header {
+        display: none;
+    }
+   
+}
+
+@media (min-width: 768px) {
+    .hamburger-header {
+        display: none;
+    }
+    .box-header {
+        display: flex;
+        background-color: rgb(250, 212, 184);
+    }
+
+    .logo-header {
+        display: flex;
+        width: 15%;
+        margin-left: 10px;
+    }
+    .logo-header-img {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-bar-header {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 21px;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+       font-size: 85%;
+       transition: all 2s;
+    }
+.nav-bar-header :hover{
+    
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-transform: uppercase;
+}
+
+}
+
+@media (min-width: 950px){
+.nav-bar-header{
+    font-size: 100%;
+}
+.hamburger-header {
+    display: none;
+}
+
+
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%- include('./partials/head') %>
+    
+
+    <body class="fondo-home">
+
+        <%- include('./partials/header') %>
+
+            <section class="banner-home-1">
+
+                <div class="banner-izquierda-1 slider">
+                    <ul>
+                        <li><img src="/images/caja-abierta-fondo.jpg" class="img-slider" alt="Huära Chocolates"></li>
+                        <li><img src="/images/cajas-chocolates-bolsa.jpg" class="img-slider" alt="Huära Chocolates">
+                        </li>
+                        <li><img src="/images/presentacion-caja.jpg" class="img-slider" alt="Huära Chocolates"></li>
+                        <li><img src="/images/mouse.jpg" class="img-slider" alt="Huära Chocolates"></li>
+                    </ul>
+                </div>
+
+                <div class="banner-derecha-1">
+                    <img src="/images/logo-huara-sinfondo.png" alt="Huära Chocolates">
+                </div>
+                <div class="banner-derecha-1">
+                    <h3>Probá y descubrí el verdadero chocolate. Sin conservantes, aditivos ni
+                        aceites hidrogenados. Cada pieza es confeccionada
+                        100% a mano con el mejor chocolate belga.</h3>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="banner-carrousel">
+
+            <div class="carrusel">
+                
+                
+                <div class=" carousel__contenedor">
+                    
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                   
+                  
+                    <div class="carousel__lista">
+                    <% for ( let i=0 ;  i < products.length; i ++ ){%>
+                        <div class=" carrusel__elemento">
+                            <a href="/productos/<%= products[i].id%>">
+                                <img class="product-img carrusel-img" src="/images/products/<%= products[i].image %>"
+                                    alt=<%=products[i].name %> >
+                                <div class="box-description">
+                               <%= products[i].name %>
+                            </a>
+                        </div>
+                    </div>
+                    <% } %>
+                    
+                </div>
+                
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                
+                    <i class="fas fa-chevron-right"></i>
+               
+                </button>
+                    <div role="tablist" class="carousel__indicadores"></div>
+                
+               
+            </div>
+
+            </div>
+            
+        </section>
+
+        <section class="banner-home-2">
+
+            <img src="/images/variados-hojas-corto.jpg" alt="Huära Chocolates" width="100%">
+
+
+
+            <a href="/productos">
+                <div>
+                    <ul class="list-banner-2">
+                        <li>Nuestros productos</li>
+
+                    </ul>
+                </div>
+            </a>
+        </section>
+
+
+            
+            
+            
+
+            <section class="banner-home-3">
+                <div class="img-newsletter">
+                    <img src="/images/frambuesa-flores-corto.png" alt="Huära Chocolates">
+                </div>
+                <div class="newsletter">
+                    
+                            <h3> Compartí tu foto chocolatosa en Instagram mencionando a @huarachocolate y accedé
+                                automáticamente a un 20% de descuento en tu próxima compra!</h3>
+                       
+                </div>
+            </section>
+
+
+            <%- include('./partials/footer') %>
+                <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+                <script src="/js/slider.js"></script>
+    </body>
+
+
+</html>

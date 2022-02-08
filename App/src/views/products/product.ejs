@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %> 
+
+<body class="fondo-products">
+    <%- include('../partials/header') %> 
+
+    <main style="background-image: url('/images/fondo-cactus.png');">
+        <h1> <% products.product_category_id %></h1>
+        <section class="productos-fondito">
+            <div class="head-products">
+                <img src="images\prueba1-corto.jpeg" class="head-product-image">
+                <div class="titulo"> Productos.</div>
+            </div>
+        </section>
+        <section id="2" class="fondo-products">
+            
+            <p class="intro">Tabletitas y chocolates tipo Bariloche a elección. Podés elegir las dulzuras que más te gusten, creadas y elaboradas a mano en San Juan, con la mejor materia prima.</p>
+            <div class="buscar-titulo">
+                <form action="/productos" method="POST">
+                    <input type="text" name="titulo" id="titulo" class="buscar-product">
+                    <button class="boton-buscar" type="submit">Buscar</button>
+                </form>  
+            </div>    
+                <div> 
+                        <article  class="product" >
+                            <% for (  let i = 0 ; i < products.length; i ++ ){%>
+                              
+                               <div  class= "product-box" id="lista-productos" >
+                                    <a href="/productos/<%= products[i].id%>">
+                                    <img src="/images/products/<%= products[i].image %>"    alt = <%= products[i].name %> class="product-img">
+                                    <div class="box-description">
+                                    <p  class="detalle" id="description"><%= products[i].description %></p>
+                                    <h4 class="descripcion" id="name"><%= products[i].name %>  </h4>
+                                    <h4 class="descripcion" id="price">$<%= products[i].price %></h4>
+                                    <h4 class="descripcion" id="category"><%= products[i].category.category %></h4>
+                                    </a>   
+                                    <% if (locals.isLogged)  { %>
+                                    <form action="/carrito" method="post" id="agregar-producto-carrito" >
+                                        <input name="productCart" type="hidden" value="<%= products[i].id %>" >
+                                        <button type="submit" class="add-to-cart" value="<%= products[i].id %>" >Agregar al carrito</button>
+                                    </form> 
+                                    <% } %> 
+                                  
+
+                                          
+                                    </div>    
+                                </div> 
+                            <% } %>
+                        </article>
+                        
+                </div>
+               
+        </section>
+
+       
+
+    </main>
+
+    <%- include('../partials/footer') %>
+
+    <script src="./js/shopCart.js"></script>
+    
+    
+  
+    
+
+</body>
+
+</html>
+                

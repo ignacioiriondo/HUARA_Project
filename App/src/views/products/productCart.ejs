@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <%- include('../partials/head') %> 
+
+<body style="background-image: url('/images/fondo-cactus.png')">
+    <%- include('../partials/header') %> 
+
+    <!-- <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+    </div> -->
+
+
+    <main style="background-image: url('/images/fondo-cactus.png')">
+        <section >
+            <div style="background-image: url('/images/fondo-cactus.png')"class="head-carrito">
+                <img src="/images/genericas/taza-chocolate-partido-corto.jpg" class="head-carrito-image">
+                <div class="titulo-carrito"> Carrito.</div>
+            </div>
+        </section>
+
+        <% if (locals.cart.length != 0)  { %>
+            <div>                   
+            <div class="boton-compra-compra">
+                <h4 class="descripcion-carrito">
+                    <a href="/productos">Seguir comprando</a>
+                </h4>
+
+            </div>
+            </div> 
+           
+        <% } %>
+
+       
+      
+
+        <section class="section-product-carrito">
+
+            
+
+            <div class= "todos-productos-carrito">
+
+                
+
+                <% for (  let i = 0 ; i < products.length; i ++ ){%>
+                <article class="product-carrito">
+                    <div>
+                        <img src= "/images/products/<%= products[i].image %>" alt = <%= products[i].name %> class="product-img-carrito">
+                    </div>
+                    <div class= "product-box-carrito">
+                        <h4 class="descripcion-carrito"><%= products[i].description %></h4>
+                        <h4 class="descripcion-carrito"><%= products[i].name %></h4>
+                        <h4 class="descripcion-carrito" id="precio-unitario">500gr | $<%= products[i].price %></h4>
+                        <div >
+                            <input class="cantidad-producto" type="number" value="1" min="1" id="quantity">
+                        </div>
+
+                        <div class="total">
+                            <h4 class="descripcion-carrito">Total</h4>
+                            <h4 class="descripcion-carrito" id="price-per-product">
+                                
+                                    $<%= products[i].price %>
+                                
+                            </h4>
+                        </div>
+
+
+
+
+                        <form action="/carrito?_method=PUT" method="POST" style="display: inline-flex" id="eliminar-producto" >
+                            <input name="deleteProduct" type="hidden" value="<%= products[i].id %>">
+                            <button class="detail-eliminar-producto" type="submit" value="<%= products[i].id %>">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                        
+
+                        
+
+                        
+
+                    </div> 
+                </article>
+                <% } %>
+
+               
+
+               
+
+                <div class="pagar">
+                    <div>
+                        <h4 class="descripcion-carrito">Total Productos <%= products.length %> </h4>
+                        <h4 class="descripcion-carrito">Total a pagar</h4>
+                        <h4 class="descripcion-carrito" id="total">$000.00</h4>
+                    </div>
+                    <div class="boton-compra">
+                        
+                        
+                        <% if (locals.cart.length === 0)  { %>
+                            
+                            
+                            <h4 class="descripcion-carrito">
+                                <a href="/productos">Iniciar Compra</a>
+                            </h4>
+
+                            
+                            
+                            <% } else { %>
+                                
+                            <form action="/carrito?_method=DELETE" method="POST" style="display: inline-flex" class="terminarCompra" id="terminar-compra">
+                                <button class="detail-comprar-producto" type="submit" value="<%= products.id %>" >
+                                    <h4 class="descripcion-carrito">Terminar compra</h4>
+                                </button>
+                            </form>
+                                
+                        <% } %>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+
+
+    <%- include('../partials/footer') %>
+
+    <script src="./js/shopCart.js"></script>
+
+
+ </body>
+ 
+</html>

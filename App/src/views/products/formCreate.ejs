@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %> 
+
+<body class="fondo-login">
+    <%- include('../partials/header') %> 
+
+    <main class="login">
+        <h2 class="title-login">Formulario de creación de productos</h2>
+        <br>
+        <section class="cuadro">
+            <div class="formulario">
+            <form action="/productos/crearproducto" method="POST" enctype= "multipart/form-data" class='createEditForm'>
+                <p class="campo">
+                <label for="productName"class="label">Nombre de producto</label>
+                <input style="outline: none" type="text" name="name" id="productName" class="input" placeholder="Nombre" style="font-style:italic; font-size: 12px" value="<%= typeof oldProductData != 'undefined'? oldProductData.name: '' %>">
+                </p>
+                <span style="color: red; font-size: 10px; font-style:italic">
+                    <% if (locals.errors && errors.name) { %>  
+                        <%= errors.name.msg %> 
+                    <% } %>
+                </span>
+                <br>
+                <p class="campo">
+                <label for="productDescription"class="label">Descripción</label>
+                <input style="outline: none" type="text" name="description" id="productDescription" class="input" placeholder="Descripción" style="font-style:italic; font-size: 12px" value="<%= locals.oldProductData ? oldProductData.description : null %>">
+                </p>
+                <span style="color: red; font-size: 10px; font-style:italic">
+                    <% if (locals.errors && errors.description) { %>  
+                        <%= errors.description.msg %> 
+                    <% } %>
+                </span>
+                <br>
+                <p class="campo">
+                <label for="productImage" class="label">Imagen</label>
+                <input style="outline: none" type="file" name="image" id="productImage" class="input" placeholder="Seleccione la imagen" style="font-style:italic; font-size: 12px">
+                </p>
+                <span style="color: red; font-size: 10px; font-style:italic">
+                    <% if (locals.errors && errors.image) { %>  
+                        <%= errors.image.msg %> 
+                    <% } %>
+                </span>
+                <br>
+                <p class="campo">
+                <label for="productCategory"class="label">Categoría</label>
+                <select name="category" class="category-select">
+                    <option selected disabled>Seleccioná una opción</option>
+                    <% for( let i = 0; i < category.length; i++ ) { %>
+
+                        <option value="<%= category[i].id%>" class="input">
+                            
+                            <%= category[i].category%>
+
+                        </option>
+                         
+                    <% } %>
+                   
+                </select>
+                </p>
+
+ 
+                    <span style="color: red; font-size: 10px; font-style:italic">
+                        <% if (locals.errors && errors.category) { %>  
+                            <%= errors.category.msg %> 
+                        <% } %>
+                    </span>
+
+               
+
+
+
+                
+                <br>
+                <p class="campo">
+                    <label for="productPrice" class="label">Precio ARS $</label>
+                    <input style="outline: none" type="number" name="price" id="productPrice" class="input" placeholder="ARS $" step="0.01" style="font-style:italic; font-size: 12px" value="<%= locals.oldProductData ? oldProductData.price : null %>">
+                    </p>
+                <p>
+                    <span style="color: red; font-size: 10px; font-style:italic">
+                        <% if (locals.errors && errors.price) { %>  
+                            <%= errors.price.msg %> 
+                        <% } %>
+                    </span>
+                <br>
+
+                <p class="campo">
+                    <label for="stock" class="label">Stock</label>
+                    <input style="outline: none" type="number" name="stock" id="stock" class="input" value="<%= locals.oldProductData ? oldProductData.stock : null %>">
+                    </p>
+                    <span style="color: red; font-size: 10px; font-style:italic">
+                        <% if (locals.errors && errors.stock) { %>  
+                            <%= errors.stock.msg %> 
+                        <% } %>
+                    </span>
+                <p>
+                <br>
+
+                <button type="submit" class="button" style="width: fit-content;" ><span>GUARDAR</span>
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </button>
+                <a href="/productos/crearproducto"><p class="observation">Borrar formulario</p></a>
+            </form>
+            </div>
+        </section>
+        <script src="/js/products.js"></script>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html>
