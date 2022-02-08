@@ -1,4 +1,6 @@
-# Proyecto Huara #
+# HUARA Project #
+
+##This project was developed in the work environment of the Digital House Bootcamp Academy##
 
 
 ## *Temática del sitio y público objetivo:* ##
