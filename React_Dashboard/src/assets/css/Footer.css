@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div.box-footer {
+    display: flex;
+    background-color: rgb(114,141,117);
+    
+}
+
+
+.logo-footer-img {
+    max-width: 30%;
+    text-align: center;
+}
+
+div.img-logo{
+    margin: auto;
+    text-align: center;
+}

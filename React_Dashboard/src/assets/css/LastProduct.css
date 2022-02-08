@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.padre-last-product{
+    display: flex;
+    position:relative;
+}
+
+.hijo-last-product{
+    position: absolute;
+    left: 300px;
+    top: -500px;
+}
+
+.imagen-last-product{
+    max-width: 41.5%;
+    border-radius:15px;
+}
+
+div.descripcion{
+    border: solid 1.5px rgb(114,141,117);
+    border-radius: 15px;
+    box-sizing: content-box;
+    width: 40%;
+    background-color: rgb(114,141,117) ;
+    padding: 8px;
+    margin-top: 5px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+div.desc-dash{
+    font-size: 14px;
+    color: white;
+
+}
+
+div.ultimo-prod{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+
+}
