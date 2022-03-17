@@ -4,7 +4,8 @@
   "description": "* Nuestro proyecto es un e-commerce de chocolates. A través del mismo se venderán tabletas, bombones, trufas, y otras delicias artesanales hechas con chocolate de origen belga, sin conservantes ni aditivos.",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
