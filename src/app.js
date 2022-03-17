@@ -51,7 +51,10 @@ app.use('/api', apiRouter);
 
 
 //servidor
-app.listen(3001, () => {
+
+const PORT = process.env.PORT || 3001
+
+app.listen(PORT, () => {
     console.log('Servidor levantado en el puerto 3001')
 })
 

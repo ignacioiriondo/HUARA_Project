@@ -1,9 +1,11 @@
+require('dotenv').config();
+
 module.exports= {
   "development": {
     "username": process.env.DB_USER,
     "password": process.env.DB_PASS,
     "database": process.env.DB_NAME,
-    "host": process.env.DB_HOST,
+    "host": "mysql-ignacio-iriondo.alwaysdata.net",
     "port": process.env.DB_PORT,
     "dialect": "mysql",
     "operatorsAliases": 0
