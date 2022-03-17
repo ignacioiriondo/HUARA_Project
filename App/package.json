@@ -1,5 +1,5 @@
 {
-  "name": "grupo_2_huara",
+  "name": "huara_project",
   "version": "1.0.0",
   "description": "* Nuestro proyecto es un e-commerce de chocolates. A través del mismo se venderán tabletas, bombones, trufas, y otras delicias artesanales hechas con chocolate de origen belga, sin conservantes ni aditivos.",
   "main": "src/app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gonpampin/grupo_2_huara.git"
+    "url": "git+https://github.com/ignacioiriondo/HUARA_Project.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gonpampin/grupo_2_huara/issues"
+    "url": "https://github.com/ignacioiriondo/HUARA_Project.git/issues"
   },
-  "homepage": "https://github.com/gonpampin/grupo_2_huara#readme",
+  "homepage": "https://github.com/ignacioiriondo/HUARA_Project.git#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
