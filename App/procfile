@@ -1,2 +1,2 @@
 web: node src/app.js
-web: nodemon
+web: npm start
