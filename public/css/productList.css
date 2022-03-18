@@ -7,7 +7,7 @@ main {
     background-image: url('/images/fondo-cactus.png');
     font-size: 18px;
     color: rgb(114, 141, 117);
-    font-family: nexa-light;
+    font-family: Roboto;
     padding: 5px;
     font-weight: bold;
     border-bottom: 2px ridge white;
@@ -16,7 +16,7 @@ main {
     background-color: white;
     font-size: 18px;
     color: rgb(114, 141, 117);
-    font-family: nexa-light;
+    font-family: Roboto;
     padding: 5px;
     font-weight: bold;
 }
@@ -30,7 +30,7 @@ main {
     background-color: white;
     font-size: 16px;
     color: rgb(114, 141, 117);
-    font-family: nexa-light;
+    font-family: Roboto;
     padding: 5px;
 }
 
@@ -96,6 +96,6 @@ main {
 
     font-size:16px;
     color: rgb(114,141,117);
-    font-family: nexa-light;
+    font-family: Roboto;
     padding: 5px;
 }

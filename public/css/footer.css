@@ -15,7 +15,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: nexa-bold;
+    font-family: Roboto;
 }
 .main-footer{
     background-color: rgb(250,212,184);
@@ -49,7 +49,7 @@
     display: inline-block;
     padding: 5px 0;
     font-size: 16px;
-    font-family: nexa-light;
+    font-family: Roboto;
     font-weight: 400;
 }
 
@@ -67,7 +67,7 @@ div.icons i{
     color: rgb(114,141,117);
     padding: 5px 0;
     font-size: 16px;
-    font-family: nexa-light;
+    font-family: Roboto;
     font-weight: 400;
 
 }
@@ -76,7 +76,7 @@ div.icons div h3{
     color: rgb(114,141,117);
     padding: 5px 0;
     font-size: 16px;
-    font-family: nexa-light;
+    font-family: Roboto;
     font-weight: 400;
     display: none;
 }
@@ -101,7 +101,7 @@ div.icons{
 }
 
 .copyright p{
-    font-family: nexa-light;
+    font-family: Roboto;
 }
 
 

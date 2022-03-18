@@ -180,7 +180,7 @@ button.carousel__anterior{
 
 .banner-derecha-1 h3{
     display: flex;
-    font-family: nexa-light;
+    font-family: Roboto;
     font-size: 18px;
     color: #666;
 }
@@ -202,7 +202,7 @@ button.carousel__anterior{
    
     
     text-align: center;
-    font-family: nexa-light;
+    font-family: Roboto;
     font-size: 40px;
     color:rgb(114,141,117);
     font-style: bold;
@@ -222,7 +222,7 @@ button.carousel__anterior{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    font-family: nexa-light;
+    font-family: Roboto;
     color: rgb(114,141,117);
     letter-spacing: .2REM;
     background-color: rgba(255, 255, 255, 0.5);
@@ -241,12 +241,12 @@ button.carousel__anterior{
 
 .carru-titulo{
     color: rgb(77, 77, 77);
-    font-family: nexa-light;
+    font-family: Roboto;
 }
 
 .list-banner-2 li{
     font-size: 30px;
-    font-family: nexa-light;
+    font-family: Roboto;
     color: rgb(114,141,117);
     letter-spacing: .2REM;
     background-color: rgba(255, 255, 255, 0.5);
@@ -269,7 +269,7 @@ button.carousel__anterior{
     width: 100%;
 }
 .newsletter h3{
-    font-family: nexa-light;
+    font-family: Roboto;
     font-size: 18px;
     color: #666;
 }

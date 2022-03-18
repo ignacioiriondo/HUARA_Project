@@ -62,7 +62,7 @@ div.borde-blanco{
 .descripcion-carrito{
     font-size:16px;
     color: rgb(114,141,117);
-    font-family: nexa-light;
+    font-family: Roboto;
     padding: 5px;
 }
 
@@ -76,7 +76,7 @@ div.borde-blanco{
 .iniciar-compra{
     font-size:16px;
     color: rgb(114,141,117);
-    font-family: nexa-light;
+    font-family: Roboto;
     padding: 5px;
    
 
@@ -120,7 +120,7 @@ div.cantidad-producto i{
 h4.cantidad{
     font-size:14px;
     color: rgb(114,141,117);
-    font-family: nexa-light;
+    font-family: Roboto;
     padding: 5px;
     width: 28%;
 }

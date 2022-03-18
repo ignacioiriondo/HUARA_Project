@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url(/css/home.css);
 @import url(/css/header.css);
 @import url(/css/footer.css);
@@ -10,17 +12,11 @@
 @import url(/css/productList.css);
 
 
-@font-face {
-    font-family: nexa-bold;
-    src: url('/design/NexaBold.otf') format('opentype');
-} 
-@font-face {
-    font-family: nexa-light;
-    src: url('/design/NexaLight.otf') format('opentype');
-} 
+
+
 
 * {
-    font-family: nexa-bold;
+    font-family: Roboto;
     box-sizing: border-box;
 }
 

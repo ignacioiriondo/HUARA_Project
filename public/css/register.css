@@ -15,14 +15,14 @@
    font-size: 15px;
    font-style: oblique;
    padding: 15px;
-   font-family: nexa-light;
+   font-family: Roboto;
 }
 
 .observation{
    color: rgb(114,141,117);
    font-size:12px;
    margin-bottom:20px;
-   font-family: nexa-light;
+   font-family: Roboto;
    margin-top: 5px;
   }
 
@@ -69,7 +69,7 @@
     border-radius: 12px;
     padding: 5px;
     width: 200px;
-    font-family: nexa-light;
+    font-family: Roboto;
     font-weight: bolder;
     margin:5px;
     
@@ -110,7 +110,7 @@
       margin:auto;
       padding:5px 5px;
       color: black;
-      font-family: nexa-light;
+      font-family: Roboto;
        width: 300px;
        border: none;
        box-shadow: 0px 0px 10px rgb(100,100,100);
